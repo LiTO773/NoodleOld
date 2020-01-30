@@ -1,0 +1,1 @@
+All the logic necessary to connect/download from Moodle is stored here

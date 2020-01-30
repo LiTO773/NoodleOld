@@ -17,8 +17,6 @@ func GetSettingsPath() (dest string) {
 	dest = "~/.NoodleCore/"
 	if currentOS == "windows" {
 		dest = os.Getenv("APPDATA") + "\\NoodleCore\\"
-	} else if currentOS == "darwin" {
-		dest = "~/Library/Preferences/NoodleCore/"
 	}
 
 	// Check if it exists
