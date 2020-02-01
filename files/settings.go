@@ -1,9 +1,12 @@
 package files
 
 import (
-	"fmt"
+	"log"
 	"os"
 	"runtime"
+
+	errors "../errorcodes"
+	"../helpers"
 )
 
 // GetSettingsPath returns the correct path to where the application's files are
@@ -19,12 +22,14 @@ func GetSettingsPath() (dest string) {
 		dest = os.Getenv("APPDATA") + "\\NoodleCore\\"
 	}
 
-	// Check if it exists
-	// https://gist.github.com/mattes/d13e273314c3b3ade33f
-	if _, err := os.Stat(dest); os.IsNotExist(err) {
-		// Doesn't exist, so create the folder
-		err = os.Mkdir(dest, os.ModePerm)
-		fmt.Println(err)
+	// Create the folder if it doesn't exist
+	err := helpers.CreateLocation(dest)
+
+	if err != nil {
+		log.Fatalln("Unable to create the settings folder!")
+		log.Fatalln(err)
+
+		os.Exit(int(errors.IOError))
 	}
 
 	return dest

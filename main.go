@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"./db"
-
 	_ "github.com/mattn/go-sqlite3"
+
+	"./moodle"
 )
 
 func main() {
-	fmt.Println(db.GetDB())
+	fmt.Println(moodle.NewUser("http://domain/", "username", "password", "where to save"))
 }

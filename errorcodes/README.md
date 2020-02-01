@@ -1,0 +1,1 @@
+All the errors used by controllers are stored here

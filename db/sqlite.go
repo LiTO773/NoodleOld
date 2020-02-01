@@ -2,43 +2,55 @@ package db
 
 import (
 	"database/sql"
+	"fmt"
 
 	"../files"
 )
 
-const fileName = "stuff.db"
+// FileName stores the SQLite file name
+const FileName = "stuff.db"
 
 // currentConn stores the current connection with the SQLite database
 var currentConn *sql.DB
 
 // GetDB returns or creates a connection with the application's SQLite database.
 // If the database doesn't exist, a new one will be created
-func GetDB() (err error) {
+func GetDB() (*sql.DB, error) {
 	if currentConn == nil {
+		fmt.Println("Connection opened!")
 		// Start the connection
-		currentConn, err = sql.Open("sqlite3", files.GetSettingsPath()+fileName)
+		var err error
+		currentConn, err = sql.Open("sqlite3", files.GetSettingsPath()+FileName)
 
-		// Test query to check if the DB exists
-		_, err = currentConn.Query("SELECT id FROM moodles")
+		// Test query to check if the DB has the expected tables
+		_, err = currentConn.Exec("SELECT id FROM moodles")
 		if err != nil {
 			// Populate the DB
 			err = populateDB()
 		}
+		return currentConn, err
 	}
-	return
+	return currentConn, nil
 }
 
 // populateDB creates the required tables for the application to work
 func populateDB() (err error) {
-	statement, err := currentConn.Prepare(`CREATE TABLE IF NOT EXISTS moodles (
-		id INTEGER PRIMARY KEY,
-		url TEXT,
-		username TEXT,
-		wstoken TEXT,
-		userid INTEGER,
-		location TEXT,
-		UNIQUE(url, username)
-		)`)
+	statement, err := currentConn.Prepare(`
+		CREATE TABLE IF NOT EXISTS moodles (
+			id INTEGER PRIMARY KEY
+			           AUTOINCREMENT,
+			url TEXT NOT NULL
+			         CHECK ((url GLOB 'http://*/') OR (url GLOB 'https://*/')),
+			username TEXT NOT NULL
+			              CHECK (LENGTH(username) > 0),
+			password TEXT NOT NULL
+			              CHECK (LENGTH(password) > 0),
+			wstoken TEXT,
+			location TEXT NOT NULL
+			              CHECK (LENGTH(location) > 0),
+			UNIQUE(url, username)
+		);`)
 	_, err = statement.Exec()
+	statement.Close()
 	return
 }

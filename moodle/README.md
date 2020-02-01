@@ -1,1 +1,1 @@
-All the logic necessary to connect/download from Moodle is stored here
+All the logic necessary to interact with Moodle is stored here
