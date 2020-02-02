@@ -32,6 +32,41 @@ func SaveUser(url string, username string, password string, token string, locati
 	return
 }
 
+// SearchUser gets one user in the database that matches de parameters given
+func SearchUser(url string, username string) (result User, err error) {
+	// Get the connection
+	connection, err := db.GetDB()
+	if err != nil {
+		return
+	}
+
+	// Query the DB
+	rows, err := connection.Query(`
+		SELECT password, wstoken
+		FROM moodles
+		WHERE url=? AND username=?
+	`, url, username)
+	if err != nil {
+		return
+	}
+	defer rows.Close()
+
+	// Get and save the first record
+	rows.Next()
+	err = rows.Scan(&result.Password, &result.Token)
+
+	if err != nil {
+		return
+	}
+
+	// Add the missing params, this way it will only return a completely filled
+	// object when it is successful
+	result.Url = url
+	result.Username = username
+
+	return
+}
+
 // SaveToken stores the token in the correct place in the DB
 // If it succeeds returns nil, otherwise an error is returned
 func SaveToken(url string, username string, token string) (err error) {
