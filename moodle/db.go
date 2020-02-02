@@ -93,3 +93,29 @@ func SaveToken(url string, username string, token string) (err error) {
 	}
 	return
 }
+
+// SaveSiteInfo saves the remaining Moodle info
+func SaveSiteInfo(info MoodleInfo, url string, username string) (err error) {
+	connection, err := db.GetDB()
+	if err != nil {
+		return
+	}
+
+	statement, err := connection.Prepare(`
+		UPDATE moodles
+		SET sitename=?, firstname=?, lastname=?, lang=?, userid=?, userpictureurl=?
+		WHERE url=? AND username=?`)
+	if err != nil {
+		return
+	}
+
+	defer statement.Close()
+
+	res, err := statement.Exec(info.Sitename, info.Firstname, info.Lastname, info.Lang, info.Userid, info.Userpictureurl, url, username)
+	if err != nil {
+		return
+	} else if num, err := res.RowsAffected(); num == 0 || err != nil {
+		err = errors.New("Info wasn't stored")
+	}
+	return
+}

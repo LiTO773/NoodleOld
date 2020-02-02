@@ -48,6 +48,12 @@ func populateDB() (err error) {
 			wstoken TEXT,
 			location TEXT NOT NULL
 			              CHECK (LENGTH(location) > 0),
+			sitename TEXT,
+			firstname TEXT,
+			lastname TEXT,
+			lang TEXT,
+			userid TEXT,
+			userpictureurl TEXT,
 			UNIQUE(url, username)
 		);`)
 	_, err = statement.Exec()

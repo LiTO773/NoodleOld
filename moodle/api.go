@@ -13,10 +13,12 @@ import (
 // Body: username: username, password: password
 // Returns the user's token in the Moodle or an error code if Moodle Web
 // Services aren't allowed in the server
+// NOTE: If a Moodle service is https:// and the user types http://, Moodle will
+// return an error saying that the username wasn't provided!
 func RequestAuthentication(host string, username string, password string) (map[string]interface{}, error) {
 	var result map[string]interface{}
 
-	resp, err := http.PostForm(host+"/login/token.php?service=moodle_mobile_app", url.Values{
+	resp, err := http.PostForm(host+"login/token.php?service=moodle_mobile_app", url.Values{
 		"username": {username},
 		"password": {password},
 	})
@@ -39,7 +41,7 @@ func RequestAuthentication(host string, username string, password string) (map[s
 	return result, err
 }
 
-// GetSiteInfo requests the information abou the user and the moodle
+// GetSiteInfo requests the information about the user and the moodle
 // It can also be used to test if the token is still valid
 // Request: <host>/webservice/rest/server.php?moodlewsrestformat=json
 // Body: wstoken: token, wsfunction: core_webservice_get_site_info
