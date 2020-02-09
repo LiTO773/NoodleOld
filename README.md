@@ -30,7 +30,7 @@ mockup file was created with Adobe XD, and can be found in the `mockups` folder.
 
 Main page | Settings | Moodle View | Course View | Search View
 :--------:|:--------:|:-----------:|:-----------:|:-----------:
-![](mockups/Main.svg) | ![](mockups/Settings.svg) | ![](mockups/Moodle_View.svg) | ![](mockups/Course_view.svg) | ![](mockups/Search_View.svg)
+![](mockups/Main.svg) | ![](mockups/Settings.svg) | ![](mockups/Moodle_View.svg) | ![](mockups/Course_View.svg) | ![](mockups/Search_View.svg)
 
 ### Register Moodle Flow
 
