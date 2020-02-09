@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="538" viewBox="0 0 375 538">
+  <defs>
+    <clipPath id="clip-Add_Moodle_1">
+      <rect width="375" height="538"/>
+    </clipPath>
+  </defs>
+  <g id="Add_Moodle_1" data-name="Add Moodle – 1" clip-path="url(#clip-Add_Moodle_1)">
+    <rect width="375" height="538" fill="#fff"/>
+    <g id="Header">
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="375" height="45" fill="#6dd8ff"/>
+      <text id="New_Moodle" data-name="New Moodle" transform="translate(42 29)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">New Moodle</tspan></text>
+      <path id="chevron-left-solid_1_" data-name="chevron-left-solid (1)" d="M27.975,51.5,41.327,38.145a1.649,1.649,0,0,1,2.332,0L45.216,39.7a1.649,1.649,0,0,1,0,2.329L34.637,52.662,45.218,63.293a1.648,1.648,0,0,1,0,2.329L43.658,67.18a1.649,1.649,0,0,1-2.332,0L27.975,53.828A1.649,1.649,0,0,1,27.975,51.5Z" transform="translate(-19.493 -29.663)" fill="#fff"/>
+    </g>
+    <text id="URL" transform="translate(13 73)" fill="#4a4545" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">URL</tspan></text>
+    <g id="Rectangle_9" data-name="Rectangle 9" transform="translate(14 82)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="347" height="30" rx="8" stroke="none"/>
+      <rect x="0.5" y="0.5" width="346" height="29" rx="7.5" fill="none"/>
+    </g>
+    <text id="Username" transform="translate(13 140)" fill="#4a4545" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Username</tspan></text>
+    <g id="Rectangle_10" data-name="Rectangle 10" transform="translate(14 149)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="347" height="30" rx="8" stroke="none"/>
+      <rect x="0.5" y="0.5" width="346" height="29" rx="7.5" fill="none"/>
+    </g>
+    <text id="Password" transform="translate(13 207)" fill="#4a4545" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Password</tspan></text>
+    <g id="Rectangle_11" data-name="Rectangle 11" transform="translate(14 216)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="347" height="30" rx="8" stroke="none"/>
+      <rect x="0.5" y="0.5" width="346" height="29" rx="7.5" fill="none"/>
+    </g>
+    <rect id="Rectangle_12" data-name="Rectangle 12" width="100" height="30" transform="translate(261 494)" fill="#6dd8ff"/>
+    <text id="Connect" transform="translate(284 515)" fill="#fff" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Connect</tspan></text>
+    <text id="Location" transform="translate(13 277)" fill="#4a4545" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Location</tspan></text>
+    <g id="Rectangle_22" data-name="Rectangle 22" transform="translate(13 291)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="214" height="33" stroke="none"/>
+      <rect x="0.5" y="0.5" width="213" height="32" fill="none"/>
+    </g>
+    <text id="Choose_the_files_destination" data-name="Choose the files destination" transform="translate(29 313)" fill="#4a4545" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Choose the files destination</tspan></text>
+  </g>
+</svg>

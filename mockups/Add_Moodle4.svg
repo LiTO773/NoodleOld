@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="538" viewBox="0 0 375 538">
+  <defs>
+    <clipPath id="clip-Add_Moodle_4">
+      <rect width="375" height="538"/>
+    </clipPath>
+  </defs>
+  <g id="Add_Moodle_4" data-name="Add Moodle – 4" clip-path="url(#clip-Add_Moodle_4)">
+    <rect width="375" height="538" fill="#fff"/>
+    <g id="Header">
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="375" height="45" fill="#6dd8ff"/>
+      <text id="Downloading..." transform="translate(42 29)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Downloading...</tspan></text>
+      <path id="chevron-left-solid_1_" data-name="chevron-left-solid (1)" d="M27.975,51.5,41.327,38.145a1.649,1.649,0,0,1,2.332,0L45.216,39.7a1.649,1.649,0,0,1,0,2.329L34.637,52.662,45.218,63.293a1.648,1.648,0,0,1,0,2.329L43.658,67.18a1.649,1.649,0,0,1-2.332,0L27.975,53.828A1.649,1.649,0,0,1,27.975,51.5Z" transform="translate(-19.493 -29.663)" fill="#fff"/>
+    </g>
+    <text id="Progress_Information" data-name="Progress Information" transform="translate(86 325)" fill="#2f2a2a" font-size="22" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Progress Information</tspan></text>
+    <text id="The_logo_will_turn_yellow_if_an_error_occurred" data-name="The logo will turn yellow if an
+error occurred" transform="translate(18 387)" fill="#2f2a2a" font-size="22" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">The logo will turn yellow if an</tspan><tspan x="0" y="30">error occurred</tspan></text>
+    <text id="If_everything_went_well_it_will_skip_to_the_next_view_click_here_" data-name="If everything went well, it will skip to
+the next view (click here)" transform="translate(18 467)" fill="#2f2a2a" font-size="22" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">If everything went well, it will skip to</tspan><tspan x="0" y="30">the next view (click here)</tspan></text>
+    <path id="download-solid" d="M72.12,0H98.83a7.994,7.994,0,0,1,8.013,8.013V64.106h29.282a6.665,6.665,0,0,1,4.708,11.386L90.049,126.309a6.469,6.469,0,0,1-9.115,0L30.083,75.492a6.665,6.665,0,0,1,4.708-11.386H64.106V8.013A7.994,7.994,0,0,1,72.12,0Zm98.83,125.541v37.4a7.994,7.994,0,0,1-8.013,8.013H8.013A7.994,7.994,0,0,1,0,162.937v-37.4a7.994,7.994,0,0,1,8.013-8.013H56.994l16.36,16.36a17.109,17.109,0,0,0,24.24,0l16.36-16.36h48.981A7.994,7.994,0,0,1,170.95,125.541Zm-41.4,29.382a6.678,6.678,0,1,0-6.678,6.678A6.7,6.7,0,0,0,129.548,154.923Zm21.369,0a6.678,6.678,0,1,0-6.678,6.678A6.7,6.7,0,0,0,150.917,154.923Z" transform="translate(102 92)"/>
+  </g>
+</svg>

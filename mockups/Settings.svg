@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="538" viewBox="0 0 375 538">
+  <defs>
+    <clipPath id="clip-Settings">
+      <rect width="375" height="538"/>
+    </clipPath>
+  </defs>
+  <g id="Settings" clip-path="url(#clip-Settings)">
+    <rect width="375" height="538" fill="#fff"/>
+    <g id="Header">
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="375" height="45" fill="#6dd8ff"/>
+      <text id="Settings-2" data-name="Settings" transform="translate(42 29)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Settings</tspan></text>
+      <path id="chevron-left-solid_1_" data-name="chevron-left-solid (1)" d="M27.975,51.5,41.327,38.145a1.649,1.649,0,0,1,2.332,0L45.216,39.7a1.649,1.649,0,0,1,0,2.329L34.637,52.662,45.218,63.293a1.648,1.648,0,0,1,0,2.329L43.658,67.18a1.649,1.649,0,0,1-2.332,0L27.975,53.828A1.649,1.649,0,0,1,27.975,51.5Z" transform="translate(-19.493 -29.663)" fill="#fff"/>
+    </g>
+    <text id="Dark_Mode" data-name="Dark Mode" transform="translate(18 83)" fill="#4a4545" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dark Mode</tspan></text>
+    <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(312 66)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="42" height="21" rx="10" stroke="none"/>
+      <rect x="0.5" y="0.5" width="41" height="20" rx="9.5" fill="none"/>
+    </g>
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(315 69)" fill="#fff" stroke="#707070" stroke-width="1">
+      <circle cx="7.5" cy="7.5" r="7.5" stroke="none"/>
+      <circle cx="7.5" cy="7.5" r="7" fill="none"/>
+    </g>
+    <line id="Line_1" data-name="Line 1" x2="336" transform="translate(18.5 98.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="Refresh_Interval" data-name="Refresh Interval" transform="translate(18 127)" fill="#4a4545" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Refresh Interval</tspan></text>
+    <line id="Line_2" data-name="Line 2" x2="336" transform="translate(18.5 142.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Rectangle_7" data-name="Rectangle 7" transform="translate(267 111)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="88" height="22" stroke="none"/>
+      <rect x="0.5" y="0.5" width="87" height="21" fill="none"/>
+    </g>
+    <text id="_2_hours" data-name="2 hours" transform="translate(272 127)" fill="#4a4545" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2 hours</tspan></text>
+    <g id="Rectangle_8" data-name="Rectangle 8" transform="translate(338 111)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="17" height="22" stroke="none"/>
+      <rect x="0.5" y="0.5" width="16" height="21" fill="none"/>
+    </g>
+    <path id="Path_1" data-name="Path 1" d="M0,0,6.032,6.239,12,0" transform="translate(340.5 119.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="Check_it_out_on_GitHub_" data-name="Check it out on GitHub!" transform="translate(18 173)" fill="#4a4545" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Check it out on GitHub!</tspan></text>
+    <line id="Line_3" data-name="Line 3" x2="336" transform="translate(18.5 188.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="github-brands" d="M10.291,32.156c0,.124-.143.223-.323.223-.2.019-.347-.081-.347-.223,0-.124.143-.223.323-.223C10.13,31.914,10.291,32.013,10.291,32.156Zm-1.929-.279c-.043.124.081.267.267.3a.291.291,0,0,0,.385-.124c.037-.124-.081-.267-.267-.323a.318.318,0,0,0-.385.143Zm2.742-.105c-.18.043-.3.161-.285.3.019.124.18.2.366.161s.3-.161.285-.285S11.284,31.753,11.1,31.771ZM15.186,8A14.875,14.875,0,0,0,0,23.136,15.552,15.552,0,0,0,10.515,37.975c.794.143,1.073-.347,1.073-.751,0-.385-.019-2.506-.019-3.809,0,0-4.342.931-5.254-1.849,0,0-.707-1.805-1.725-2.27,0,0-1.421-.974.1-.955a3.275,3.275,0,0,1,2.395,1.6,3.279,3.279,0,0,0,4.522,1.3,3.448,3.448,0,0,1,.993-2.091c-3.468-.385-6.966-.887-6.966-6.855A4.7,4.7,0,0,1,7.1,18.639a5.861,5.861,0,0,1,.161-4.212c1.3-.4,4.28,1.675,4.28,1.675a14.655,14.655,0,0,1,7.791,0s2.984-2.084,4.28-1.675a5.858,5.858,0,0,1,.161,4.212,4.822,4.822,0,0,1,1.6,3.654c0,5.986-3.654,6.464-7.121,6.855A3.669,3.669,0,0,1,19.3,32.026c0,2.091-.019,4.677-.019,5.186,0,.4.285.893,1.073.751A15.409,15.409,0,0,0,30.769,23.136C30.769,14.532,23.79,8,15.186,8ZM6.03,29.4c-.081.062-.062.2.043.323.1.1.242.143.323.062.081-.062.062-.2-.043-.323C6.253,29.358,6.11,29.315,6.03,29.4Zm-.67-.5c-.043.081.019.18.143.242a.185.185,0,0,0,.267-.043c.043-.081-.019-.18-.143-.242C5.5,28.812,5.4,28.831,5.36,28.893ZM7.37,31.1c-.1.081-.062.267.081.385.143.143.323.161.4.062.081-.081.043-.267-.081-.385C7.636,31.021,7.45,31,7.37,31.1Zm-.707-.912c-.1.062-.1.223,0,.366s.267.2.347.143a.283.283,0,0,0,0-.385C6.923,30.171,6.762,30.109,6.662,30.189Z" transform="translate(322 144)"/>
+  </g>
+</svg>

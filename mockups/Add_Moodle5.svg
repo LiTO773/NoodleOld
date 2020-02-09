@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="538" viewBox="0 0 375 538">
+  <defs>
+    <clipPath id="clip-Add_Moodle_5">
+      <rect width="375" height="538"/>
+    </clipPath>
+  </defs>
+  <g id="Add_Moodle_5" data-name="Add Moodle – 5" clip-path="url(#clip-Add_Moodle_5)">
+    <rect width="375" height="538" fill="#fff"/>
+    <text id="_Moodle_Name_was_added_" data-name="&lt;Moodle Name&gt; was added!" transform="translate(45 379)" fill="#5eda2a" font-size="22" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">&lt;Moodle Name&gt; was added!</tspan></text>
+    <g id="Header">
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="375" height="45" fill="#6dd8ff"/>
+      <text id="And_._It_s_done_" data-name="And…. It&apos;s done!" transform="translate(42 29)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">And…. It&apos;s done!</tspan></text>
+      <path id="chevron-left-solid_1_" data-name="chevron-left-solid (1)" d="M27.975,51.5,41.327,38.145a1.649,1.649,0,0,1,2.332,0L45.216,39.7a1.649,1.649,0,0,1,0,2.329L34.637,52.662,45.218,63.293a1.648,1.648,0,0,1,0,2.329L43.658,67.18a1.649,1.649,0,0,1-2.332,0L27.975,53.828A1.649,1.649,0,0,1,27.975,51.5Z" transform="translate(-19.493 -29.663)" fill="#fff"/>
+    </g>
+    <path id="check-circle-solid" d="M178.95,93.475A85.475,85.475,0,1,1,93.475,8,85.475,85.475,0,0,1,178.95,93.475ZM83.588,138.733l63.417-63.417a5.515,5.515,0,0,0,0-7.8l-7.8-7.8a5.514,5.514,0,0,0-7.8,0L79.689,111.438,55.542,87.292a5.515,5.515,0,0,0-7.8,0l-7.8,7.8a5.515,5.515,0,0,0,0,7.8l35.844,35.844a5.515,5.515,0,0,0,7.8,0Z" transform="translate(94 145)" fill="#5eda2a"/>
+  </g>
+</svg>

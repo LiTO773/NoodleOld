@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="538" viewBox="0 0 375 538">
+  <defs>
+    <clipPath id="clip-Search_1">
+      <rect width="375" height="538"/>
+    </clipPath>
+  </defs>
+  <g id="Search_1" data-name="Search – 1" clip-path="url(#clip-Search_1)">
+    <rect width="375" height="538" fill="#fff"/>
+    <g id="Header">
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="375" height="45" fill="#6dd8ff"/>
+      <text id="Type_your_text_here" data-name="Type your text here" transform="translate(42 29)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Type your text here</tspan></text>
+      <path id="chevron-left-solid_1_" data-name="chevron-left-solid (1)" d="M27.975,51.5,41.327,38.145a1.649,1.649,0,0,1,2.332,0L45.216,39.7a1.649,1.649,0,0,1,0,2.329L34.637,52.662,45.218,63.293a1.648,1.648,0,0,1,0,2.329L43.658,67.18a1.649,1.649,0,0,1-2.332,0L27.975,53.828A1.649,1.649,0,0,1,27.975,51.5Z" transform="translate(-19.493 -29.663)" fill="#fff"/>
+    </g>
+    <text id="Searches_for_files_html_text_sections_and_courses_Using_the_filter_icon_above_the_user_can_change_the_search_context_for_example:_only_search_files_" data-name="Searches for files, html text, sections and courses
+
+Using the filter icon above, the user can change
+the search context (for example: only search files)" transform="translate(19 88)" fill="#4a4545" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Searches for files, html text, sections and courses</tspan><tspan x="0" y="20"></tspan><tspan x="0" y="40">Using the filter icon above, the user can change</tspan><tspan x="0" y="60">the search context (for example: only search files)</tspan></text>
+    <path id="filter-solid" d="M28.592,0H1.408A1.407,1.407,0,0,0,.414,2.4L11.25,13.239V25.312a1.406,1.406,0,0,0,.6,1.152l4.687,3.28a1.407,1.407,0,0,0,2.213-1.152V13.239L29.587,2.4A1.407,1.407,0,0,0,28.592,0Z" transform="translate(335 7)" fill="#fff"/>
+  </g>
+</svg>

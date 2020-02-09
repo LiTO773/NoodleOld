@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="538" viewBox="0 0 375 538">
+  <defs>
+    <clipPath id="clip-Add_Moodle_2">
+      <rect width="375" height="538"/>
+    </clipPath>
+  </defs>
+  <g id="Add_Moodle_2" data-name="Add Moodle – 2" clip-path="url(#clip-Add_Moodle_2)">
+    <rect width="375" height="538" fill="#fff"/>
+    <g id="Header">
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="375" height="45" fill="#6dd8ff"/>
+      <text id="Connecting..." transform="translate(42 29)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Connecting...</tspan></text>
+      <path id="chevron-left-solid_1_" data-name="chevron-left-solid (1)" d="M27.975,51.5,41.327,38.145a1.649,1.649,0,0,1,2.332,0L45.216,39.7a1.649,1.649,0,0,1,0,2.329L34.637,52.662,45.218,63.293a1.648,1.648,0,0,1,0,2.329L43.658,67.18a1.649,1.649,0,0,1-2.332,0L27.975,53.828A1.649,1.649,0,0,1,27.975,51.5Z" transform="translate(-19.493 -29.663)" fill="#fff"/>
+    </g>
+    <path id="sync-alt-solid" d="M133.018,51.18a57.918,57.918,0,0,0-95.7,28.114A4.146,4.146,0,0,1,33.3,82.448H13.55a4.134,4.134,0,0,1-4.069-4.886A85.488,85.488,0,0,1,152.524,31.673l12.31-12.31a8.272,8.272,0,0,1,14.121,5.849V71.419a8.272,8.272,0,0,1-8.272,8.272H124.477a8.272,8.272,0,0,1-5.849-14.121ZM16.272,107.264H62.478a8.272,8.272,0,0,1,5.849,14.121l-14.39,14.39a57.918,57.918,0,0,0,95.7-28.114,4.146,4.146,0,0,1,4.016-3.154H173.4a4.134,4.134,0,0,1,4.069,4.886A85.488,85.488,0,0,1,34.431,155.281l-12.31,12.31A8.272,8.272,0,0,1,8,161.742V115.536A8.272,8.272,0,0,1,16.272,107.264Z" transform="translate(94 90.045)"/>
+    <text id="Progress_Information" data-name="Progress Information" transform="translate(86 325)" fill="#2f2a2a" font-size="22" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Progress Information</tspan></text>
+    <text id="The_logo_will_turn_yellow_if_an_error_occurred" data-name="The logo will turn yellow if an
+error occurred" transform="translate(18 387)" fill="#2f2a2a" font-size="22" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">The logo will turn yellow if an</tspan><tspan x="0" y="30">error occurred</tspan></text>
+    <text id="If_everything_went_well_it_will_skip_to_the_next_view_click_here_" data-name="If everything went well, it will skip to
+the next view (click here)" transform="translate(18 467)" fill="#2f2a2a" font-size="22" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">If everything went well, it will skip to</tspan><tspan x="0" y="30">the next view (click here)</tspan></text>
+  </g>
+</svg>

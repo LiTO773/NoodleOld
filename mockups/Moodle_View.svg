@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="538" viewBox="0 0 375 538">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="0.5" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6dd8ff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#6dd8ff"/>
+    </linearGradient>
+    <clipPath id="clip-Moodle_1">
+      <rect width="375" height="538"/>
+    </clipPath>
+  </defs>
+  <g id="Moodle_1" data-name="Moodle – 1" clip-path="url(#clip-Moodle_1)">
+    <rect width="375" height="538" fill="#fff"/>
+    <g id="Header">
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="375" height="45" fill="#6dd8ff"/>
+      <text id="Instituto_Superior_de_Engenharia_do_Porto" data-name="Instituto Superior de Engenharia do Porto" transform="translate(42 29)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Instituto Superior de Engenharia do Porto</tspan></text>
+      <path id="chevron-left-solid_1_" data-name="chevron-left-solid (1)" d="M27.975,51.5,41.327,38.145a1.649,1.649,0,0,1,2.332,0L45.216,39.7a1.649,1.649,0,0,1,0,2.329L34.637,52.662,45.218,63.293a1.648,1.648,0,0,1,0,2.329L43.658,67.18a1.649,1.649,0,0,1-2.332,0L27.975,53.828A1.649,1.649,0,0,1,27.975,51.5Z" transform="translate(-19.493 -29.663)" fill="#fff"/>
+    </g>
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="112" height="45" transform="translate(263)" fill="url(#linear-gradient)"/>
+    <text id="Downloaded_Courses" data-name="Downloaded Courses" transform="translate(20 78)" fill="#707070" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Downloaded Courses</tspan></text>
+    <g id="Entry" transform="translate(20 98)">
+      <g id="Rectangle_4" data-name="Rectangle 4" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="344" height="38" stroke="none"/>
+        <rect x="0.5" y="0.5" width="343" height="37" fill="none"/>
+      </g>
+      <text id="ARQCP" transform="translate(51 25)" fill="#4a4545" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">ARQCP</tspan></text>
+    </g>
+    <path id="book-open-solid" d="M20.575,32c-2.079.118-6.213.548-8.764,2.109a.583.583,0,0,0-.276.5V48.414a.6.6,0,0,0,.883.512c2.625-1.321,6.422-1.682,8.3-1.78a1.184,1.184,0,0,0,1.139-1.163V33.163A1.19,1.19,0,0,0,20.575,32Zm-10.53,2.109C7.494,32.545,3.361,32.116,1.282,32A1.19,1.19,0,0,0,0,33.163v12.82a1.183,1.183,0,0,0,1.139,1.163c1.878.1,5.676.46,8.3,1.782a.6.6,0,0,0,.881-.511V34.6A.571.571,0,0,0,10.046,34.107Z" transform="translate(33 77.004)"/>
+    <g id="Entry-2" data-name="Entry" transform="translate(20 135)">
+      <g id="Rectangle_4-2" data-name="Rectangle 4" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="344" height="38" stroke="none"/>
+        <rect x="0.5" y="0.5" width="343" height="37" fill="none"/>
+      </g>
+      <text id="BDDAD" transform="translate(51 25)" fill="#4a4545" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">BDDAD</tspan></text>
+    </g>
+    <path id="book-open-solid-2" data-name="book-open-solid" d="M20.575,32c-2.079.118-6.213.548-8.764,2.109a.583.583,0,0,0-.276.5V48.414a.6.6,0,0,0,.883.512c2.625-1.321,6.422-1.682,8.3-1.78a1.184,1.184,0,0,0,1.139-1.163V33.163A1.19,1.19,0,0,0,20.575,32Zm-10.53,2.109C7.494,32.545,3.361,32.116,1.282,32A1.19,1.19,0,0,0,0,33.163v12.82a1.183,1.183,0,0,0,1.139,1.163c1.878.1,5.676.46,8.3,1.782a.6.6,0,0,0,.881-.511V34.6A.571.571,0,0,0,10.046,34.107Z" transform="translate(33 114.004)"/>
+    <g id="Entry-3" data-name="Entry" transform="translate(20 172)">
+      <g id="Rectangle_4-3" data-name="Rectangle 4" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="344" height="38" stroke="none"/>
+        <rect x="0.5" y="0.5" width="343" height="37" fill="none"/>
+      </g>
+      <text id="ESINF" transform="translate(51 25)" fill="#4a4545" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">ESINF</tspan></text>
+    </g>
+    <path id="book-open-solid-3" data-name="book-open-solid" d="M20.575,32c-2.079.118-6.213.548-8.764,2.109a.583.583,0,0,0-.276.5V48.414a.6.6,0,0,0,.883.512c2.625-1.321,6.422-1.682,8.3-1.78a1.184,1.184,0,0,0,1.139-1.163V33.163A1.19,1.19,0,0,0,20.575,32Zm-10.53,2.109C7.494,32.545,3.361,32.116,1.282,32A1.19,1.19,0,0,0,0,33.163v12.82a1.183,1.183,0,0,0,1.139,1.163c1.878.1,5.676.46,8.3,1.782a.6.6,0,0,0,.881-.511V34.6A.571.571,0,0,0,10.046,34.107Z" transform="translate(33 151.004)"/>
+    <g id="Entry-4" data-name="Entry" transform="translate(20 209)">
+      <g id="Rectangle_4-4" data-name="Rectangle 4" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="344" height="38" stroke="none"/>
+        <rect x="0.5" y="0.5" width="343" height="37" fill="none"/>
+      </g>
+      <text id="FSIAP" transform="translate(51 25)" fill="#4a4545" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">FSIAP</tspan></text>
+    </g>
+    <path id="book-open-solid-4" data-name="book-open-solid" d="M20.575,32c-2.079.118-6.213.548-8.764,2.109a.583.583,0,0,0-.276.5V48.414a.6.6,0,0,0,.883.512c2.625-1.321,6.422-1.682,8.3-1.78a1.184,1.184,0,0,0,1.139-1.163V33.163A1.19,1.19,0,0,0,20.575,32Zm-10.53,2.109C7.494,32.545,3.361,32.116,1.282,32A1.19,1.19,0,0,0,0,33.163v12.82a1.183,1.183,0,0,0,1.139,1.163c1.878.1,5.676.46,8.3,1.782a.6.6,0,0,0,.881-.511V34.6A.571.571,0,0,0,10.046,34.107Z" transform="translate(33 188.004)"/>
+    <g id="Entry-5" data-name="Entry" transform="translate(20 246)">
+      <g id="Rectangle_4-5" data-name="Rectangle 4" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="344" height="38" stroke="none"/>
+        <rect x="0.5" y="0.5" width="343" height="37" fill="none"/>
+      </g>
+      <text id="LAPR3" transform="translate(51 25)" fill="#4a4545" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">LAPR3</tspan></text>
+    </g>
+    <path id="book-open-solid-5" data-name="book-open-solid" d="M20.575,32c-2.079.118-6.213.548-8.764,2.109a.583.583,0,0,0-.276.5V48.414a.6.6,0,0,0,.883.512c2.625-1.321,6.422-1.682,8.3-1.78a1.184,1.184,0,0,0,1.139-1.163V33.163A1.19,1.19,0,0,0,20.575,32Zm-10.53,2.109C7.494,32.545,3.361,32.116,1.282,32A1.19,1.19,0,0,0,0,33.163v12.82a1.183,1.183,0,0,0,1.139,1.163c1.878.1,5.676.46,8.3,1.782a.6.6,0,0,0,.881-.511V34.6A.571.571,0,0,0,10.046,34.107Z" transform="translate(33 225.004)"/>
+    <g id="Entry-6" data-name="Entry" transform="translate(20 283)">
+      <g id="Rectangle_4-6" data-name="Rectangle 4" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="344" height="38" stroke="none"/>
+        <rect x="0.5" y="0.5" width="343" height="37" fill="none"/>
+      </g>
+      <text id="EAPLI" transform="translate(51 25)" fill="#4a4545" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">EAPLI</tspan></text>
+    </g>
+    <path id="book-open-solid-6" data-name="book-open-solid" d="M20.575,32c-2.079.118-6.213.548-8.764,2.109a.583.583,0,0,0-.276.5V48.414a.6.6,0,0,0,.883.512c2.625-1.321,6.422-1.682,8.3-1.78a1.184,1.184,0,0,0,1.139-1.163V33.163A1.19,1.19,0,0,0,20.575,32Zm-10.53,2.109C7.494,32.545,3.361,32.116,1.282,32A1.19,1.19,0,0,0,0,33.163v12.82a1.183,1.183,0,0,0,1.139,1.163c1.878.1,5.676.46,8.3,1.782a.6.6,0,0,0,.881-.511V34.6A.571.571,0,0,0,10.046,34.107Z" transform="translate(33 262.004)"/>
+    <g id="Entry-7" data-name="Entry" transform="translate(20 320)">
+      <g id="Rectangle_4-7" data-name="Rectangle 4" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="344" height="38" stroke="none"/>
+        <rect x="0.5" y="0.5" width="343" height="37" fill="none"/>
+      </g>
+      <text id="LAPR4" transform="translate(51 25)" fill="#4a4545" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">LAPR4</tspan></text>
+    </g>
+    <path id="book-open-solid-7" data-name="book-open-solid" d="M20.575,32c-2.079.118-6.213.548-8.764,2.109a.583.583,0,0,0-.276.5V48.414a.6.6,0,0,0,.883.512c2.625-1.321,6.422-1.682,8.3-1.78a1.184,1.184,0,0,0,1.139-1.163V33.163A1.19,1.19,0,0,0,20.575,32Zm-10.53,2.109C7.494,32.545,3.361,32.116,1.282,32A1.19,1.19,0,0,0,0,33.163v12.82a1.183,1.183,0,0,0,1.139,1.163c1.878.1,5.676.46,8.3,1.782a.6.6,0,0,0,.881-.511V34.6A.571.571,0,0,0,10.046,34.107Z" transform="translate(33 299.004)"/>
+    <path id="star-solid_1_" data-name="star-solid (1)" d="M28.427.579l-2.168,4.4-4.85.707a1.063,1.063,0,0,0-.588,1.813l3.509,3.419-.83,4.83a1.062,1.062,0,0,0,1.54,1.119l4.339-2.281,4.339,2.281a1.063,1.063,0,0,0,1.54-1.119l-.83-4.83,3.509-3.419a1.063,1.063,0,0,0-.588-1.813L32.5,4.974,30.333.579a1.063,1.063,0,0,0-1.906,0Z" transform="translate(313.5 108.013)" fill="#ffed01"/>
+    <path id="star-solid_1_2" data-name="star-solid (1)" d="M28.427.579l-2.168,4.4-4.85.707a1.063,1.063,0,0,0-.588,1.813l3.509,3.419-.83,4.83a1.062,1.062,0,0,0,1.54,1.119l4.339-2.281,4.339,2.281a1.063,1.063,0,0,0,1.54-1.119l-.83-4.83,3.509-3.419a1.063,1.063,0,0,0-.588-1.813L32.5,4.974,30.333.579a1.063,1.063,0,0,0-1.906,0Z" transform="translate(313.5 145.013)" fill="#ffed01"/>
+    <path id="star-solid_1_3" data-name="star-solid (1)" d="M28.427.579l-2.168,4.4-4.85.707a1.063,1.063,0,0,0-.588,1.813l3.509,3.419-.83,4.83a1.062,1.062,0,0,0,1.54,1.119l4.339-2.281,4.339,2.281a1.063,1.063,0,0,0,1.54-1.119l-.83-4.83,3.509-3.419a1.063,1.063,0,0,0-.588-1.813L32.5,4.974,30.333.579a1.063,1.063,0,0,0-1.906,0Z" transform="translate(313.5 182.013)" fill="#ffed01"/>
+    <path id="star-solid_1_4" data-name="star-solid (1)" d="M28.427.579l-2.168,4.4-4.85.707a1.063,1.063,0,0,0-.588,1.813l3.509,3.419-.83,4.83a1.062,1.062,0,0,0,1.54,1.119l4.339-2.281,4.339,2.281a1.063,1.063,0,0,0,1.54-1.119l-.83-4.83,3.509-3.419a1.063,1.063,0,0,0-.588-1.813L32.5,4.974,30.333.579a1.063,1.063,0,0,0-1.906,0Z" transform="translate(313.5 219.013)" fill="#ffed01"/>
+    <path id="star-solid_1_5" data-name="star-solid (1)" d="M28.427.579l-2.168,4.4-4.85.707a1.063,1.063,0,0,0-.588,1.813l3.509,3.419-.83,4.83a1.062,1.062,0,0,0,1.54,1.119l4.339-2.281,4.339,2.281a1.063,1.063,0,0,0,1.54-1.119l-.83-4.83,3.509-3.419a1.063,1.063,0,0,0-.588-1.813L32.5,4.974,30.333.579a1.063,1.063,0,0,0-1.906,0Z" transform="translate(313.5 257.013)" fill="#ffed01"/>
+    <text id="Courses" transform="translate(20 400)" fill="#707070" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Courses</tspan></text>
+    <g id="Entry-8" data-name="Entry" transform="translate(20 420)">
+      <g id="Rectangle_4-8" data-name="Rectangle 4" fill="#fff" stroke="rgba(112,112,112,0.4)" stroke-width="1">
+        <rect width="344" height="38" stroke="none"/>
+        <rect x="0.5" y="0.5" width="343" height="37" fill="none"/>
+      </g>
+      <text id="APROG" transform="translate(51 25)" fill="rgba(74,69,69,0.4)" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">APROG</tspan></text>
+    </g>
+    <path id="book-open-solid-8" data-name="book-open-solid" d="M20.575,32c-2.079.118-6.213.548-8.764,2.109a.583.583,0,0,0-.276.5V48.414a.6.6,0,0,0,.883.512c2.625-1.321,6.422-1.682,8.3-1.78a1.184,1.184,0,0,0,1.139-1.163V33.163A1.19,1.19,0,0,0,20.575,32Zm-10.53,2.109C7.494,32.545,3.361,32.116,1.282,32A1.19,1.19,0,0,0,0,33.163v12.82a1.183,1.183,0,0,0,1.139,1.163c1.878.1,5.676.46,8.3,1.782a.6.6,0,0,0,.881-.511V34.6A.571.571,0,0,0,10.046,34.107Z" transform="translate(33 399.004)" fill="rgba(0,0,0,0.4)" stroke="rgba(112,112,112,0.4)" stroke-width="1"/>
+    <g id="Entry-9" data-name="Entry" transform="translate(20 457)">
+      <g id="Rectangle_4-9" data-name="Rectangle 4" fill="#fff" stroke="rgba(112,112,112,0.4)" stroke-width="1">
+        <rect width="344" height="38" stroke="none"/>
+        <rect x="0.5" y="0.5" width="343" height="37" fill="none"/>
+      </g>
+      <text id="PRCMP" transform="translate(51 25)" fill="rgba(74,69,69,0.4)" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">PRCMP</tspan></text>
+    </g>
+    <path id="book-open-solid-9" data-name="book-open-solid" d="M20.575,32c-2.079.118-6.213.548-8.764,2.109a.583.583,0,0,0-.276.5V48.414a.6.6,0,0,0,.883.512c2.625-1.321,6.422-1.682,8.3-1.78a1.184,1.184,0,0,0,1.139-1.163V33.163A1.19,1.19,0,0,0,20.575,32Zm-10.53,2.109C7.494,32.545,3.361,32.116,1.282,32A1.19,1.19,0,0,0,0,33.163v12.82a1.183,1.183,0,0,0,1.139,1.163c1.878.1,5.676.46,8.3,1.782a.6.6,0,0,0,.881-.511V34.6A.571.571,0,0,0,10.046,34.107Z" transform="translate(33 436.004)" fill="rgba(0,0,0,0.4)" stroke="rgba(112,112,112,0.4)" stroke-width="1"/>
+    <g id="Entry-10" data-name="Entry" transform="translate(20 494)">
+      <g id="Rectangle_4-10" data-name="Rectangle 4" fill="#fff" stroke="rgba(112,112,112,0.4)" stroke-width="1">
+        <rect width="344" height="38" stroke="none"/>
+        <rect x="0.5" y="0.5" width="343" height="37" fill="none"/>
+      </g>
+      <text id="MDISC" transform="translate(51 25)" fill="rgba(74,69,69,0.4)" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">MDISC</tspan></text>
+    </g>
+    <path id="book-open-solid-10" data-name="book-open-solid" d="M20.575,32c-2.079.118-6.213.548-8.764,2.109a.583.583,0,0,0-.276.5V48.414a.6.6,0,0,0,.883.512c2.625-1.321,6.422-1.682,8.3-1.78a1.184,1.184,0,0,0,1.139-1.163V33.163A1.19,1.19,0,0,0,20.575,32Zm-10.53,2.109C7.494,32.545,3.361,32.116,1.282,32A1.19,1.19,0,0,0,0,33.163v12.82a1.183,1.183,0,0,0,1.139,1.163c1.878.1,5.676.46,8.3,1.782a.6.6,0,0,0,.881-.511V34.6A.571.571,0,0,0,10.046,34.107Z" transform="translate(33 473.004)" fill="rgba(0,0,0,0.4)" stroke="rgba(112,112,112,0.4)" stroke-width="1"/>
+    <g id="Entry-11" data-name="Entry" transform="translate(20 531)">
+      <g id="Rectangle_4-11" data-name="Rectangle 4" fill="#fff" stroke="rgba(112,112,112,0.4)" stroke-width="1">
+        <rect width="344" height="38" stroke="none"/>
+        <rect x="0.5" y="0.5" width="343" height="37" fill="none"/>
+      </g>
+      <text id="AMATA" transform="translate(51 25)" fill="rgba(74,69,69,0.4)" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">AMATA</tspan></text>
+    </g>
+    <path id="search-solid" d="M29.587,25.937,23.746,20.1a1.405,1.405,0,0,0-1-.41h-.955a12.181,12.181,0,1,0-2.109,2.109v.955a1.405,1.405,0,0,0,.41,1l5.841,5.841a1.4,1.4,0,0,0,1.986,0l1.658-1.658A1.413,1.413,0,0,0,29.587,25.937Zm-17.4-6.251a7.5,7.5,0,1,1,7.5-7.5A7.495,7.495,0,0,1,12.186,19.686Z" transform="translate(335 7)" fill="#fff"/>
+    <path id="download-solid" d="M7.172,0H9.828a.8.8,0,0,1,.8.8V6.375h2.912a.663.663,0,0,1,.468,1.132l-5.05,5.054a.643.643,0,0,1-.906,0L2.992,7.507A.663.663,0,0,1,3.46,6.375H6.375V.8A.8.8,0,0,1,7.172,0ZM17,12.484V16.2a.8.8,0,0,1-.8.8H.8a.8.8,0,0,1-.8-.8V12.484a.8.8,0,0,1,.8-.8H5.668l1.627,1.627a1.7,1.7,0,0,0,2.411,0l1.627-1.627H16.2A.8.8,0,0,1,17,12.484Zm-4.117,2.922a.664.664,0,1,0-.664.664A.666.666,0,0,0,12.883,15.406Zm2.125,0a.664.664,0,1,0-.664.664A.666.666,0,0,0,15.008,15.406Z" transform="translate(335 431)"/>
+    <path id="download-solid-2" data-name="download-solid" d="M7.172,0H9.828a.8.8,0,0,1,.8.8V6.375h2.912a.663.663,0,0,1,.468,1.132l-5.05,5.054a.643.643,0,0,1-.906,0L2.992,7.507A.663.663,0,0,1,3.46,6.375H6.375V.8A.8.8,0,0,1,7.172,0ZM17,12.484V16.2a.8.8,0,0,1-.8.8H.8a.8.8,0,0,1-.8-.8V12.484a.8.8,0,0,1,.8-.8H5.668l1.627,1.627a1.7,1.7,0,0,0,2.411,0l1.627-1.627H16.2A.8.8,0,0,1,17,12.484Zm-4.117,2.922a.664.664,0,1,0-.664.664A.666.666,0,0,0,12.883,15.406Zm2.125,0a.664.664,0,1,0-.664.664A.666.666,0,0,0,15.008,15.406Z" transform="translate(335 468)"/>
+    <path id="download-solid-3" data-name="download-solid" d="M7.172,0H9.828a.8.8,0,0,1,.8.8V6.375h2.912a.663.663,0,0,1,.468,1.132l-5.05,5.054a.643.643,0,0,1-.906,0L2.992,7.507A.663.663,0,0,1,3.46,6.375H6.375V.8A.8.8,0,0,1,7.172,0ZM17,12.484V16.2a.8.8,0,0,1-.8.8H.8a.8.8,0,0,1-.8-.8V12.484a.8.8,0,0,1,.8-.8H5.668l1.627,1.627a1.7,1.7,0,0,0,2.411,0l1.627-1.627H16.2A.8.8,0,0,1,17,12.484Zm-4.117,2.922a.664.664,0,1,0-.664.664A.666.666,0,0,0,12.883,15.406Zm2.125,0a.664.664,0,1,0-.664.664A.666.666,0,0,0,15.008,15.406Z" transform="translate(335 505)"/>
+  </g>
+</svg>
