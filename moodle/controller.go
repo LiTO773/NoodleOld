@@ -32,17 +32,17 @@ func NewUser(url string, username string, password string, location string) (str
 
 	var token string = response["token"].(string)
 
-	// The request was successful, so store the token in the DB
-	err = SaveUser(url, username, password, token, location)
-	if err != nil {
-		return "", errors.DBError
-	}
-
+	// The request was successful
 	// Get the rest of the information from moodle and store it
 	info, err := GetSiteInfo(url, token)
 	if err != nil {
 		return "", errors.InternetError
 	}
+
+	info.URL = url
+	info.Username = username
+	info.Password = password
+	info.Location = location
 
 	err = SaveSiteInfo(info, url, username)
 	if err != nil {

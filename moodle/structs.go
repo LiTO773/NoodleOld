@@ -44,17 +44,13 @@ type Course struct {
 	Deletedcourse          bool
 }
 
-// equals Checks if two courses are **completely** equals (not just the id)
+// equals Checks if two courses are equals (it only compares Moodle API fields)
 func (c Course) equals(c1 Course) bool {
-	return c.Shortname == c1.Shortname &&
+	return c.ID == c1.ID &&
+		c.Shortname == c1.Shortname &&
 		c.Fullname == c1.Fullname &&
 		c.Summary == c1.Summary &&
-		c.Downloaded == c1.Downloaded &&
-		c.Showgrades == c1.Showgrades &&
-		c.Previoushash == c1.Previoushash &&
-		c.Unhandlednotifications == c1.Unhandlednotifications &&
-		c.Newcourse == c1.Newcourse &&
-		c.Deletedcourse == c1.Deletedcourse
+		c.Showgrades == c1.Showgrades
 }
 
 // ErrorResponse stores the error code given by the Moodle API

@@ -20,9 +20,12 @@ func helperCourseListComparer(list1 []Course, list2 []Course) ([]Course, []Cours
 	var deleted []Course
 
 	for _, c := range list1 {
+		var found bool = false
+
 		for i, c1 := range list2 {
 			// Check the id first
 			if c.ID == c1.ID {
+				found = true
 				if !c.equals(c1) {
 					// Modified
 					modified = append(modified, c1)
@@ -36,8 +39,10 @@ func helperCourseListComparer(list1 []Course, list2 []Course) ([]Course, []Cours
 		}
 
 		// Deleted
-		c.Deletedcourse = true
-		deleted = append(deleted, c)
+		if !found {
+			c.Deletedcourse = true
+			deleted = append(deleted, c)
+		}
 	}
 
 	// Mark the remaining courses as new

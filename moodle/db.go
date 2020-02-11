@@ -5,32 +5,6 @@ import (
 	"errors"
 )
 
-// SaveUser stores the user in the moodle table
-// If it succeeds returns nil, otherwise an error is returned
-func SaveUser(url string, username string, password string, token string, location string) error {
-	connection, err := db.GetDB()
-	if err != nil {
-		return err
-	}
-
-	statement, err := connection.Prepare(`
-		INSERT INTO moodles(url, username, password, wstoken, location)
-		VALUES (?,?,?,?,?)`)
-	if err != nil {
-		return err
-	}
-
-	defer statement.Close()
-
-	res, err := statement.Exec(url, username, password, token, location)
-	if err != nil {
-		return err
-	} else if num, err := res.RowsAffected(); num == 0 || err != nil {
-		err = errors.New("User wasn't stored")
-	}
-	return err
-}
-
 // SearchUser gets one user in the database that matches de parameters given
 func SearchUser(url string, username string) (User, error) {
 	var result User
@@ -103,16 +77,15 @@ func SaveSiteInfo(info InfoMoodle, url string, username string) error {
 	}
 
 	statement, err := connection.Prepare(`
-		UPDATE moodles
-		SET sitename=?, firstname=?, lastname=?, lang=?, userid=?, userpictureurl=?
-		WHERE url=? AND username=?`)
+		INSERT INTO moodles(url, username, password, wstoken, location, sitename, firstname, lastname, lang, userid, userpictureurl)
+		VALUES (?,?,?,?,?,?,?,?,?,?,?)`)
 	if err != nil {
 		return err
 	}
 
 	defer statement.Close()
 
-	res, err := statement.Exec(info.Sitename, info.Firstname, info.Lastname, info.Lang, info.Userid, info.Userpictureurl, url, username)
+	res, err := statement.Exec(url, username, info.Password, info.Token, info.Location, info.Sitename, info.Firstname, info.Lastname, info.Lang, info.Userid, info.Userpictureurl)
 	if err != nil {
 		return err
 	} else if num, err := res.RowsAffected(); num == 0 || err != nil {
