@@ -16,3 +16,6 @@
 
 .vscode/
 .idea/
+www/node_modules
+
+assets.go
