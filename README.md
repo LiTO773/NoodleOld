@@ -52,6 +52,12 @@ for the components.
 Idk :P If you want to help out with a planned feature or have a suggestion feel 
 free to create a Pull Request.
 
+Make sure you are building to the folder `out/`, since systray requires the file
+`go_build_main_go.exe.manifest` in order to properly run on Windows.
+
+## Special thanks
+ - [**Twemoji**](https://twemoji.twitter.com/) for the folder icon I'm currently using to test the systray
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
