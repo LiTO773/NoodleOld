@@ -1,0 +1,30 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+	background: #6DD8FF;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	z-index: 50;
+	display: flex;
+	justify-content: space-between;
+}
+
+.icon-container-middle {
+	flex-grow: 2;
+	text-align: center;
+}
+
+.footer-icon {
+	width: 28px;
+	margin: 5px 15px;
+	filter: invert(100%); /* Set fill to #fff */
+	cursor: pointer;
+}
+
+.active {
+	border-radius: 100%;
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,112,183,1) 100%);
+}

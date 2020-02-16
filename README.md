@@ -52,6 +52,34 @@ for the components.
 Idk :P If you want to help out with a planned feature or have a suggestion feel 
 free to create a Pull Request.
 
+### Instructions
+
+In order to properly run the project use the script: `run-<your platform of choice>`.
+This script is responsible for creating the `assets.go` file, which stores all 
+the needed files for the application execution. (So far I've only tested on 
+Windows, I'll try to check if it works on other platforms asap).
+
+If for some reason you are not using the script and want to build for Windows,
+guarantee that the output directory has a file named: `<output>.exe.manifest`,
+since *systray* requires this file in order to properly run on Windows.
+
+## Roadmap and necessary future changes
+
+- I'm currently using a fork of `getlantern/systray`, since it's pretty 
+unintuitive having to right click on Windows to get the desired action. However 
+this fork is not up-to-date with the `getlantern` one.
+
+- I'm also currently using `zserge/lorca` which is pretty neat. However I do 
+which to move to `zserge/webview` since *lorca* requires the user to install 
+Chrome in order to work. As of the writting of this README, only [~69%](https://gs.statcounter.com/browser-market-share/desktop/worldwide)
+of web users use Chrome, while *webview* would allow all users to use the app 
+out-of-the-box.
+
+## Special thanks
+ - [**Twemoji**](https://twemoji.twitter.com/) for the folder icon I'm currently using to test the systray
+ - [**Loading.io**](https://loading.io/css/) for the placeholder loading css
+ - [**FontAwesome**](https://fontawesome.com/) for the amazing icons
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
