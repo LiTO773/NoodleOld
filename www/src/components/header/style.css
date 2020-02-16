@@ -8,15 +8,22 @@
   background: #6DD8FF;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   z-index: 50;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header img {
+  height: 32px;
+  filter: invert(100%); /* Set fill to #fff */
+  position: relative;
+  margin-left: 5px;
 }
 
 .header h1 {
-  float: left;
-  margin: 0;
   padding: 0 15px;
   font-size: 20px;
-  line-height: 40px;
+  line-height: 42px;
   font-weight: 400;
-  margin: 0 auto;
   color: #FFF;
 }

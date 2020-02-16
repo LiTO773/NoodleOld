@@ -1,20 +1,25 @@
 import React from 'react'
-// import { connect } from 'preact-redux'
+import { connect } from 'react-redux'
 import './style.css'
+
+import iconChevron from '../../assets/fontawesome/chevron-left-solid.svg'
 
 const Header = props => {
   return (
     <header className='header'>
-      <h1>My Moodles</h1>
+      {
+        props.header.back && <img height='25' src={iconChevron} alt='' />
+      }
+      <h1>
+        {props.header.title}
+      </h1>
     </header>
   )
 }
 
-export default Header
+const mapStateToProps = (state, props) => ({
+  props,
+  header: state.header
+})
 
-// const mapStateToProps = (state, props) => ({
-//   props,
-//   header: state.header
-// })
-
-// export default connect(mapStateToProps)(Header)
+export default connect(mapStateToProps)(Header)
