@@ -1,6 +1,6 @@
-import { h } from 'preact'
-import { Link } from 'preact-router/match'
-import style from './style.css'
+import React from 'react'
+import { Link } from 'react-router-dom'
+import './style.css'
 
 // Icons
 import iconSyncAlt from '../../assets/fontawesome/sync-alt-solid.svg'
@@ -8,17 +8,15 @@ import iconPlus from '../../assets/fontawesome/plus-solid.svg'
 import iconCog from '../../assets/fontawesome/cog-solid.svg'
 
 const Footer = () => (
-  <div class={style.footer}>
-    <img class={style.footerIcon} src={iconSyncAlt} />
-    <div className={style.iconContainerMiddle}>
-      <img class={style.footerIcon} src={iconPlus} />
+  <div className='footer'>
+    <img className='footer-icon' src={iconSyncAlt} alt='Refresh' />
+    <div className='icon-container-middle clickable'>
+      {/* Add highlight o image when selected */}
+      <Link to='/addMoodle'>
+        <img className='footer-icon' src={iconPlus} alt='Add Moodle' />
+      </Link>
     </div>
-    <img class={style.footerIcon} src={iconCog} />
-    {/* <nav>
-      <Link activeClassName={style.active} href="/">Home</Link>
-      <Link activeClassName={style.active} href="/profile">Me</Link>
-      <Link activeClassName={style.active} href="/profile/john">John</Link>
-    </nav> */}
+    <img className='footer-icon' src={iconCog} alt='Settings' />
   </div>
 )
 

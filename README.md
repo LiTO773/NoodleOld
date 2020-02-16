@@ -78,6 +78,7 @@ out-of-the-box.
 ## Special thanks
  - [**Twemoji**](https://twemoji.twitter.com/) for the folder icon I'm currently using to test the systray
  - [**Loading.io**](https://loading.io/css/) for the placeholder loading css
+ - [**FontAwesome**](https://fontawesome.com/) for the amazing icons
 
 ## License
 

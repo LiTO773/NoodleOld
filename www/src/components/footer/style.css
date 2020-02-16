@@ -12,14 +12,19 @@
 	justify-content: space-between;
 }
 
-.iconiconContainerMiddle {
+.icon-container-middle {
 	flex-grow: 2;
 	text-align: center;
 }
 
-.footerIcon {
+.footer-icon {
 	width: 28px;
 	margin: 5px 15px;
 	filter: invert(100%); /* Set fill to #fff */
 	cursor: pointer;
+}
+
+.active {
+	border-radius: 100%;
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,112,183,1) 100%);
 }

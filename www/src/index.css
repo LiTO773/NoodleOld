@@ -19,7 +19,7 @@ html, body {
   height: 100%;
 }
 
-body > div {
+.route {
   padding: 35px 20px;
   min-height: 100%;
   width: 100%;
