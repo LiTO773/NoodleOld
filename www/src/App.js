@@ -1,8 +1,10 @@
 import React from 'react'
 import './index.css'
+import 'normalize.css'
 import Header from './components/header'
 import Home from './routes/home'
-import NewMoodle1 from './routes/newMoodle/view1'
+import NewMoodle from './routes/newMoodle/view1'
+import NewMoodle2 from './routes/newMoodle/view2'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
@@ -13,7 +15,8 @@ const App = () => {
       <div className='route'>
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/addMoodle' component={NewMoodle1} />
+          <Route path='/newMoodle' component={NewMoodle} />
+          <Route path='/newMoodle2' component={NewMoodle2} />
         </Switch>
       </div>
     </Router>

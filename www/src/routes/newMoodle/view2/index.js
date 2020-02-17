@@ -2,16 +2,15 @@ import React from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
-import Footer from '../../components/footer'
-import { updateHeader } from '../../actions/headerActions'
+import { updateHeader } from '../../../actions/headerActions'
+import { goForward } from '../../../actions/historyActions'
 
-const Home = props => {
+const NewMoodle2 = props => {
   props.updateHeader(false, 'My Moodles')
   return (
     <div>
-      <h1 className='view-title'>All Moodles are displayed here</h1>
+      <h1 className='view-title'>New Moodle 2</h1>
       <p>Nuff said</p>
-      <Footer />
     </div>
   )
 }
@@ -23,4 +22,4 @@ const mapActionsToProps = (dispatch, props) => (
   }, dispatch)
 )
 
-export default connect(mapStateToProps, mapActionsToProps)(Home)
+export default connect(mapStateToProps, mapActionsToProps)(NewMoodle2)

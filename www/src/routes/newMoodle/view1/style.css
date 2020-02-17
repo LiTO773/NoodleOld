@@ -1,0 +1,21 @@
+.label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 1px;
+}
+
+.field {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px #6d8dff solid;
+  margin-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.field:focus, .field:active {
+  border-bottom: 2px #4e64b5 solid;
+  outline: none;
+}

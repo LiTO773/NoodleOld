@@ -17,7 +17,7 @@ const Footer = props => {
       <img className='footer-icon' src={iconSyncAlt} alt='Refresh' />
       <div className='icon-container-middle clickable'>
         {/* Add highlight o image when selected */}
-        <Link onClick={props.handleForward.bind(this, '/addMoodle')} to='/addMoodle'>
+        <Link onClick={props.handleForward.bind(this, '/newMoodle')} to='/newMoodle'>
           <img className='footer-icon' src={iconPlus} alt='Add Moodle' />
         </Link>
       </div>

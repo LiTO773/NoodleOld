@@ -20,7 +20,11 @@ html, body {
 }
 
 .route {
-  padding: 35px 20px;
+  padding: 65px 20px;
   min-height: 100%;
   width: 100%;
+}
+
+.view-title {
+  margin-top: 0px !important;
 }
