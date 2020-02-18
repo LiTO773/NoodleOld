@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
@@ -14,6 +15,10 @@ const Home = props => {
       <Footer />
     </div>
   )
+}
+
+Home.propTypes = {
+  updateHeader: PropTypes.func
 }
 
 const mapStateToProps = (state, props) => props

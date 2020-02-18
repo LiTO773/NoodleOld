@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './style.css'
 
 const Button = props => {
@@ -7,6 +8,11 @@ const Button = props => {
       {props.text}
     </div>
   )
+}
+
+Button.propTypes = {
+  color: PropTypes.string,
+  text: PropTypes.string
 }
 
 export default Button

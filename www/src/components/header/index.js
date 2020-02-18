@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import './style.css'
@@ -23,6 +24,12 @@ const Header = props => {
       </h1>
     </header>
   )
+}
+
+Header.propTypes = {
+  header: PropTypes.object,
+  handleBack: PropTypes.func,
+  history: PropTypes.array
 }
 
 const mapStateToProps = (state, props) => ({

@@ -1,9 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
 import { updateHeader } from '../../../actions/headerActions'
-import { goForward } from '../../../actions/historyActions'
+// import { goForward } from '../../../actions/historyActions'
 
 const NewMoodle2 = props => {
   props.updateHeader(false, 'My Moodles')
@@ -13,6 +14,10 @@ const NewMoodle2 = props => {
       <p>Nuff said</p>
     </div>
   )
+}
+
+NewMoodle2.propTypes = {
+  updateHeader: PropTypes.func
 }
 
 const mapStateToProps = (state, props) => props

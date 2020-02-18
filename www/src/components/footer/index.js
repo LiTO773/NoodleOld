@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import './style.css'
@@ -24,6 +25,10 @@ const Footer = props => {
       <img className='footer-icon' src={iconCog} alt='Settings' />
     </div>
   )
+}
+
+Footer.propTypes = {
+  handleForward: PropTypes.func
 }
 
 const mapStateToProps = (state, props) => props

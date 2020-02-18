@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
@@ -28,6 +29,10 @@ const NewMoodle = props => {
       </div>
     </div>
   )
+}
+
+NewMoodle.propTypes = {
+  updateHeader: PropTypes.func
 }
 
 const mapStateToProps = (state, props) => props
