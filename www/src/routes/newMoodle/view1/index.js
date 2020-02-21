@@ -10,9 +10,13 @@ import { updateHeader } from '../../../actions/headerActions'
 import { goForward } from '../../../actions/historyActions'
 
 const NewMoodle = props => {
-  const [formState, setFormState] = useState({ url: '', username: '', password: '' })
+  const [formState, setFormState] = useState({ protocol: '', url: '', username: '', password: '' })
 
   props.updateHeader(true, 'New Moodle (1/5)')
+
+  const handleProtocolChange = event => {
+    setFormState({ ...formState, protocol: event.target.value })
+  }
 
   const handleURLChange = event => {
     setFormState({ ...formState, url: event.target.value })
@@ -31,11 +35,17 @@ const NewMoodle = props => {
       <p className='view-title'>Insert the Moodle's information in the fields below:</p>
       <div className='form'>
         <label className='label'>URL</label>
-        <input onChange={handleURLChange} value={formState.url} className='field' type='text' />
+        <div className='max' style={{ display: 'flex' }}>
+          <select className='field' onChange={handleProtocolChange} value={formState.protocol}>
+            <option value='http://'>http://</option>
+            <option value='https://'>https://</option>
+          </select>
+          <input onChange={handleURLChange} value={formState.url} className='field' style={{ flexGrow: '2' }} type='text' />
+        </div>
         <label className='label'>Username</label>
-        <input onChange={handleUsernameChange} value={formState.username} className='field' type='text' />
+        <input onChange={handleUsernameChange} value={formState.username} className='field max' type='text' />
         <label className='label'>Password</label>
-        <input onChange={handlePasswordChange} value={formState.password} className='field' type='password' />
+        <input onChange={handlePasswordChange} value={formState.password} className='field max' type='password' />
       </div>
       <div style={{ position: 'fixed', bottom: 20, right: 20 }}>
         <Link to={{

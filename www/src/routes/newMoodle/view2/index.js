@@ -13,7 +13,7 @@ const NewMoodle2 = props => {
 
   const handleClick = () => {
     if (typeof newUser === 'function') {
-      newUser(props.location.state.url, props.location.state.username, props.location.state.password, 'TODO')
+      newUser(props.location.state.protocol + props.location.state.url, props.location.state.username, props.location.state.password, '')
         .then(result => console.log(result))
     }
   }

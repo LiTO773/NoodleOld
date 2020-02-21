@@ -6,13 +6,16 @@
 }
 
 .field {
-  width: 100%;
   background-color: transparent;
   border: none;
   border-bottom: 2px #6d8dff solid;
   margin-bottom: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.max {
+  width: 100%;
 }
 
 .field:focus, .field:active {

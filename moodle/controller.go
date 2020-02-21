@@ -6,6 +6,7 @@ import (
 	"../helpers"
 	"crypto/md5"
 	"encoding/hex"
+	"strings"
 )
 
 // NewUser authenticates the user, stores its information in the DB
@@ -15,6 +16,11 @@ import (
 // If it wasn't able to authenticate, then it will return an eror message and
 // the corresponding error code
 func NewUser(url string, username string, password string, location string) errors.ErrorCode {
+	// Check if the URL has the last /
+	if !strings.HasSuffix(url, "/") {
+		url += "/"
+	}
+
 	// Send and receive the authentication request
 	response, err := RequestAuthentication(url, username, password)
 	if err != nil {
