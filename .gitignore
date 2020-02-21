@@ -19,3 +19,4 @@
 www/node_modules
 
 assets.go
+www/build/

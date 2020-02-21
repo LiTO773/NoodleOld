@@ -4,6 +4,7 @@ import (
 	"log"
 	"os"
 	"runtime"
+	"strings"
 
 	"../helpers"
 )
@@ -18,7 +19,8 @@ func GetSettingsPath() (dest string) {
 	var currentOS string = runtime.GOOS
 	dest = "~/.Noodle/"
 	if currentOS == "windows" {
-		dest = os.Getenv("APPDATA") + "\\Noodle\\"
+		dest = strings.ReplaceAll(os.Getenv("APPDATA"), "\\", "/")
+		dest += "/Noodle/"
 	}
 
 	// Create the folder if it doesn't exist

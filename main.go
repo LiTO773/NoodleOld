@@ -1,7 +1,9 @@
 package main
 
 import (
+	"./moodle"
 	"fmt"
+	"github.com/jrsearles/systray"
 	"github.com/zserge/lorca"
 	"io/ioutil"
 	"log"
@@ -11,8 +13,6 @@ import (
 	"os"
 	"os/signal"
 	"runtime"
-
-	"github.com/jrsearles/systray"
 )
 
 func main() {
@@ -49,6 +49,8 @@ func onReady() {
 			if err != nil {
 				log.Fatal(err)
 			}
+
+			_ = ui.Bind("newUser", moodle.NewUser)
 
 			// Load HTML
 			ln, err := net.Listen("tcp", "127.0.0.1:0")

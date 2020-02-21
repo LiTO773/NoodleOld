@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import { bindActionCreators } from 'redux'
@@ -10,20 +10,41 @@ import { updateHeader } from '../../../actions/headerActions'
 import { goForward } from '../../../actions/historyActions'
 
 const NewMoodle = props => {
+  const [formState, setFormState] = useState({ url: '', username: '', password: '' })
+
   props.updateHeader(true, 'New Moodle (1/5)')
+
+  const handleURLChange = event => {
+    setFormState({ ...formState, url: event.target.value })
+  }
+
+  const handleUsernameChange = event => {
+    setFormState({ ...formState, username: event.target.value })
+  }
+
+  const handlePasswordChange = event => {
+    setFormState({ ...formState, password: event.target.value })
+  }
+
   return (
     <div>
       <p className='view-title'>Insert the Moodle's information in the fields below:</p>
       <div className='form'>
         <label className='label'>URL</label>
-        <input className='field' type='text' />
+        <input onChange={handleURLChange} value={formState.url} className='field' type='text' />
         <label className='label'>Username</label>
-        <input className='field' type='text' />
+        <input onChange={handleUsernameChange} value={formState.username} className='field' type='text' />
         <label className='label'>Password</label>
-        <input className='field' type='password' />
+        <input onChange={handlePasswordChange} value={formState.password} className='field' type='password' />
       </div>
       <div style={{ position: 'fixed', bottom: 20, right: 20 }}>
-        <Link to='/newMoodle2'>
+        <Link to={{
+          pathname: '/newMoodle2',
+          state: {
+            ...formState
+          }
+        }}
+        >
           <Button text='Connect' color='btn-default' />
         </Link>
       </div>

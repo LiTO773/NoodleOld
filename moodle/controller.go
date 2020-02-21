@@ -2,6 +2,7 @@ package moodle
 
 import (
 	errors "../errorcodes"
+	files "../files"
 	"../helpers"
 	"crypto/md5"
 	"encoding/hex"
@@ -9,25 +10,20 @@ import (
 
 // NewUser authenticates the user, stores its information in the DB
 // and returns the token if it was successfull
+// If location is an empty string, it will automatically store to the default
+// location
 // If it wasn't able to authenticate, then it will return an eror message and
 // the corresponding error code
-func NewUser(url string, username string, password string, location string) (string, errors.ErrorCode) {
-	// Check if the location exists, if it doesn't try to create it
-	err := helpers.CreateLocation(location)
-
-	if err != nil {
-		return "", errors.IOError
-	}
-
+func NewUser(url string, username string, password string, location string) errors.ErrorCode {
 	// Send and receive the authentication request
 	response, err := RequestAuthentication(url, username, password)
 	if err != nil {
-		return "", errors.InternetError
+		return errors.InternetError
 	}
 
 	// Check if the request was unsuccessful
 	if _, ok := response["error"]; ok {
-		return "", errors.ConvertMoodleError(response["errorcode"].(string))
+		return errors.ConvertMoodleError(response["errorcode"].(string))
 	}
 
 	var token string = response["token"].(string)
@@ -36,20 +32,35 @@ func NewUser(url string, username string, password string, location string) (str
 	// Get the rest of the information from moodle and store it
 	info, err := GetSiteInfo(url, token)
 	if err != nil {
-		return "", errors.InternetError
+		return errors.InternetError
 	}
 
+	info.Token = token
 	info.URL = url
 	info.Username = username
 	info.Password = password
+
+	// Check if the location exists, if it doesn't try to create it
+	if location == "" {
+		// Create the default location
+		hash := md5.Sum([]byte(info.Sitename + info.Username))
+		folder := hex.EncodeToString(hash[:])
+		location = files.GetSettingsPath() + folder
+	}
+	err = helpers.CreateLocation(location)
+
+	if err != nil {
+		return errors.IOError
+	}
+
 	info.Location = location
 
 	err = SaveSiteInfo(info, url, username)
 	if err != nil {
-		return "", errors.UnableToSaveSiteInfo
+		return errors.UnableToSaveSiteInfo
 	}
 
-	return token, errors.NoError
+	return errors.NoError
 }
 
 // LoginUser authenticates a user that already exists in the DB, if the user's
