@@ -20,3 +20,10 @@
   background-color: #6dd8ff;
   color: #fff;
 }
+
+.btn:disabled,
+.btn[disabled] {
+  background-color: #ccc;
+  color: #666;
+  cursor: default;
+}

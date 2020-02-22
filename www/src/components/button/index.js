@@ -4,7 +4,7 @@ import './style.css'
 
 const Button = props => {
   return (
-    <div className={'btn ' + props.color}>
+    <div disabled={props.disabled} className={'btn ' + (props.disabled ? '' : props.color)}>
       {props.text}
     </div>
   )
@@ -12,7 +12,8 @@ const Button = props => {
 
 Button.propTypes = {
   color: PropTypes.string,
-  text: PropTypes.string
+  text: PropTypes.string,
+  disabled: PropTypes.bool
 }
 
 export default Button

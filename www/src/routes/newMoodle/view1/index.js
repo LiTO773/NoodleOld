@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import './style.css'
@@ -14,6 +14,7 @@ const NewMoodle = props => {
   // Check if the state has already been declared
   const stateToUse = props.infos.url !== '' ? { ...props.infos } : { protocol: 'http://', url: '', username: '', password: '' }
   const [formState, setFormState] = useState(stateToUse)
+  const history = useHistory()
 
   props.updateHeader(true, 'New Moodle (1/3)')
 
@@ -34,8 +35,11 @@ const NewMoodle = props => {
   }
 
   const handleForward = () => {
-    props.editView1(formState.protocol, formState.url, formState.username, formState.password)
-    props.goForward('/newMoodle2')
+    if (formState.url !== '' && formState.username !== '' && formState.password !== '') {
+      props.editView1(formState.protocol, formState.url, formState.username, formState.password)
+      props.goForward('/newMoodle2')
+      history.push('/newMoodle2', { ...formState })
+    }
   }
 
   return (
@@ -55,18 +59,12 @@ const NewMoodle = props => {
         <label className='label'>Password</label>
         <input onChange={handlePasswordChange} value={formState.password} className='field max' type='password' />
       </div>
-      <div style={{ position: 'fixed', bottom: 20, right: 20 }}>
-        <Link
-          onClick={handleForward}
-          to={{
-            pathname: '/newMoodle2',
-            state: {
-              ...formState
-            }
-          }}
-        >
-          <Button text='Connect' color='btn-default' />
-        </Link>
+      <div onClick={handleForward} style={{ position: 'fixed', bottom: 20, right: 20 }}>
+        <Button
+          text='Connect'
+          color='btn-default'
+          disabled={formState.url === '' || formState.username === '' || formState.password === ''}
+        />
       </div>
     </div>
   )
