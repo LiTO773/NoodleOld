@@ -1,0 +1,20 @@
+/* Conversion used: https://codepen.io/sosuke/pen/Pjoqqp */
+
+.loading-txt {
+  font-size: 16px;
+}
+
+.red {
+  /* #FF1053 */
+  filter: invert(22%) sepia(92%) saturate(5877%) hue-rotate(336deg) brightness(103%) contrast(101%);
+}
+
+.green {
+  /* #59CD90 */
+  filter: invert(75%) sepia(8%) saturate(2435%) hue-rotate(96deg) brightness(93%) contrast(91%);
+}
+
+.yellow {
+  /* #ECDB56 */
+  filter: invert(81%) sepia(48%) saturate(493%) hue-rotate(5deg) brightness(97%) contrast(99%);
+}

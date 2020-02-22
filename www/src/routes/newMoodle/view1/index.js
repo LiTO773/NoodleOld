@@ -8,11 +8,14 @@ import './style.css'
 import Button from '../../../components/button'
 import { updateHeader } from '../../../actions/headerActions'
 import { goForward } from '../../../actions/historyActions'
+import { editView1 } from '../../../actions/newMoodleActions'
 
 const NewMoodle = props => {
-  const [formState, setFormState] = useState({ protocol: '', url: '', username: '', password: '' })
+  // Check if the state has already been declared
+  const stateToUse = props.infos.url !== '' ? { ...props.infos } : { protocol: 'http://', url: '', username: '', password: '' }
+  const [formState, setFormState] = useState(stateToUse)
 
-  props.updateHeader(true, 'New Moodle (1/5)')
+  props.updateHeader(true, 'New Moodle (1/3)')
 
   const handleProtocolChange = event => {
     setFormState({ ...formState, protocol: event.target.value })
@@ -28,6 +31,11 @@ const NewMoodle = props => {
 
   const handlePasswordChange = event => {
     setFormState({ ...formState, password: event.target.value })
+  }
+
+  const handleForward = () => {
+    props.editView1(formState.protocol, formState.url, formState.username, formState.password)
+    props.goForward('/newMoodle2')
   }
 
   return (
@@ -48,12 +56,14 @@ const NewMoodle = props => {
         <input onChange={handlePasswordChange} value={formState.password} className='field max' type='password' />
       </div>
       <div style={{ position: 'fixed', bottom: 20, right: 20 }}>
-        <Link to={{
-          pathname: '/newMoodle2',
-          state: {
-            ...formState
-          }
-        }}
+        <Link
+          onClick={handleForward}
+          to={{
+            pathname: '/newMoodle2',
+            state: {
+              ...formState
+            }
+          }}
         >
           <Button text='Connect' color='btn-default' />
         </Link>
@@ -63,14 +73,22 @@ const NewMoodle = props => {
 }
 
 NewMoodle.propTypes = {
-  updateHeader: PropTypes.func
+  updateHeader: PropTypes.func,
+  goForward: PropTypes.func,
+  editView1: PropTypes.func,
+  infos: PropTypes.object
 }
 
-const mapStateToProps = (state, props) => props
+const mapStateToProps = (state, props) => ({
+  props,
+  infos: state.newMoodle
+})
+
 const mapActionsToProps = (dispatch, props) => (
   bindActionCreators({
     updateHeader,
-    goForward
+    goForward,
+    editView1
   }, dispatch)
 )
 

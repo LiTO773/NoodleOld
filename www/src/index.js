@@ -7,10 +7,12 @@ import { Provider } from 'react-redux'
 import { createStore, combineReducers } from 'redux'
 import historyReducer from './reducers/historyReducer'
 import headerReducer from './reducers/headerReducer'
+import newMoodleReducer from './reducers/newMoodleReducer'
 
 const allReducers = combineReducers({
   header: headerReducer,
-  history: historyReducer
+  history: historyReducer,
+  newMoodle: newMoodleReducer
 })
 
 const store = createStore(
@@ -21,7 +23,13 @@ const store = createStore(
       title: 'My Moodles'
       // TODO implement custom right side actions
     },
-    history: ['/']
+    history: ['/'],
+    newMoodle: {
+      protocol: 'http://',
+      url: '',
+      username: '',
+      password: ''
+    }
   },
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
