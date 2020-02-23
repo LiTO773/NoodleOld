@@ -14,14 +14,18 @@ const (
 	UserDoesNotExist     ErrorCode = 6 // User isn't registered in the DB
 	UnableToSaveSiteInfo ErrorCode = 7 // Site info could not be saved in the DB
 	InvalidTokenError    ErrorCode = 8 // The current token isn't valid anymore
+	InvalidLoginError    ErrorCode = 9 // Username/Password are incorrect
 )
 
 // ConvertMoodleError Receives a Moodle Error Code and converts to the
 // appropriate ErrorCode
 func ConvertMoodleError(err string) ErrorCode {
-	if err == "invalidtoken" {
+	switch err {
+	case "invalidtoken":
 		return InvalidTokenError
-	} else if err == "enablewsdescription" {
+	case "invalidlogin":
+		return InvalidLoginError
+	case "enablewsdescription":
 		return WebServicesError
 	}
 	return MoodleError

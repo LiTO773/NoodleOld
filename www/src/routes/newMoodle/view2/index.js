@@ -42,17 +42,16 @@ const NewMoodle2 = props => {
           // Get the courses
           checkCourses(props.location.state.protocol + props.location.state.url, props.location.state.username)
             .then(ccResult => {
-              result = ccResult
-              if (result.Error === 0) {
+              if (ccResult.Error === 0) {
                 // Completly flawless 👌, go to the next view with the contents
                 props.goForward('/newMoodle3')
                 history.push('/newMoodle3', ccResult)
               } else {
-                handleError()
+                handleError(ccResult)
               }
             })
         } else {
-          handleError()
+          handleError(result)
         }
       })
   }

@@ -20,6 +20,8 @@ export default errorCode => {
       return 'The data couldn\'t be saved locally!'
     case 8:
       return 'Seems like the session currently stored in your computer has expired.' // The user will likelly never see this one
+    case 9:
+      return 'Check if you typed correctly your username and password.'
     default:
       return ''
   }
