@@ -17,9 +17,7 @@ import (
 // the corresponding error code
 func NewUser(url string, username string, password string, location string) errors.ErrorCode {
 	// Check if the URL has the last /
-	if !strings.HasSuffix(url, "/") {
-		url += "/"
-	}
+	url = helperPrettifyURL(url)
 
 	// Send and receive the authentication request
 	response, err := RequestAuthentication(url, username, password)
@@ -126,15 +124,20 @@ func LoginUser(url string, username string) (string, errors.ErrorCode) {
 // 3: All the deleted courses
 // 4: Error
 // NOTE: This function doesn't check if the course's contents have been changed.
-func CheckCourses(moodle InfoMoodle) ([]Course, []Course, []Course, errors.ErrorCode) {
-	var add, mod, del []Course
+func CheckCourses(url string, username string) (result CheckCoursesReturn) {
+	moodle, err := SearchMoodle(helperPrettifyURL(url), username)
+	if err != nil {
+		result.Error = errors.DBError
+		return
+	}
 
 	// Get the host courses
 	hostCourses, body, errorResponse, err := GetCourses(moodle.URL, moodle.Token, moodle.Userid)
 
 	// Check for errors
 	if err != nil {
-		return add, mod, del, errors.InternetError
+		result.Error = errors.InternetError
+		return
 	}
 	if errorResponse.ErrorCode != "" {
 		if errorResponse.ErrorCode == "invalidtoken" {
@@ -142,11 +145,13 @@ func CheckCourses(moodle InfoMoodle) ([]Course, []Course, []Course, errors.Error
 			errorCode := helperUpdateToken(&moodle)
 			if errorCode == errors.NoError {
 				// A new token was found, try again
-				return CheckCourses(moodle)
+				return CheckCourses(moodle.URL, moodle.Username)
 			}
-			return add, mod, del, errorCode
+			result.Error = errorCode
+			return result
 		}
-		return add, mod, del, errors.ConvertMoodleError(errorResponse.ErrorCode)
+		result.Error = errors.ConvertMoodleError(errorResponse.ErrorCode)
+		return
 	}
 
 	// Check if there were any changes (https://gist.github.com/sergiotapia/8263278)
@@ -156,22 +161,33 @@ func CheckCourses(moodle InfoMoodle) ([]Course, []Course, []Course, errors.Error
 
 	if hash == moodle.Previoushash {
 		// Nothing changed
-		return add, mod, del, errors.NoError
+		result.Error = errors.NoError
+		return
 	}
 
 	// Get the local courses
 	localCourses, err := SearchCourses(moodle.ID)
 	if err != nil {
-		return add, mod, del, errors.DBError
+		result.Error = errors.DBError
+		return
 	}
 
 	// Everything is ok, compare
-	add, mod, del = helperCourseListComparer(localCourses, hostCourses)
+	result.Add, result.Mod, result.Del = helperCourseListComparer(localCourses, hostCourses)
 
 	// Apply changes
-	if InsertAddedCourses(moodle.ID, add) != nil || UpdateModifiedCourses(moodle.ID, mod) != nil || UpdateDeletedCourses(moodle.ID, del) != nil {
-		return add, mod, del, errors.DBError
+	if InsertAddedCourses(moodle.ID, result.Add) != nil || UpdateModifiedCourses(moodle.ID, result.Mod) != nil || UpdateDeletedCourses(moodle.ID, result.Del) != nil {
+		result.Error = errors.DBError
+		return
 	}
 
-	return add, mod, del, errors.NoError
+	result.Error = errors.NoError
+	return
+}
+
+func helperPrettifyURL(url string) string {
+	if !strings.HasSuffix(url, "/") {
+		url += "/"
+	}
+	return url
 }

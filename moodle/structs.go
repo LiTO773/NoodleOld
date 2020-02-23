@@ -1,5 +1,9 @@
 package moodle
 
+import (
+	errors "../errorcodes"
+)
+
 // User stores a user's Moodle url, Username, Password and Token
 type User struct {
 	URL      string
@@ -56,4 +60,11 @@ func (c Course) equals(c1 Course) bool {
 // ErrorResponse stores the error code given by the Moodle API
 type ErrorResponse struct {
 	ErrorCode string `json:"errorcode"`
+}
+
+type CheckCoursesReturn struct {
+	Add   []Course
+	Mod   []Course
+	Del   []Course
+	Error errors.ErrorCode
 }
