@@ -52,7 +52,7 @@ for the components.
 Idk :P If you want to help out with a planned feature or have a suggestion feel 
 free to create a Pull Request.
 
-### Instructions
+## Instructions
 
 In order to properly run the project use the script: `run-<your platform of choice>`.
 This script is responsible for creating the `assets.go` file, which stores all 
@@ -82,4 +82,4 @@ out-of-the-box.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License.
