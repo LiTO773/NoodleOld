@@ -52,7 +52,7 @@ for the components.
 Idk :P If you want to help out with a planned feature or have a suggestion feel 
 free to create a Pull Request.
 
-### Instructions
+## Instructions
 
 In order to properly run the project use the script: `run-<your platform of choice>`.
 This script is responsible for creating the `assets.go` file, which stores all 
@@ -75,6 +75,10 @@ Chrome in order to work. As of the writting of this README, only [~69%](https://
 of web users use Chrome, while *webview* would allow all users to use the app 
 out-of-the-box.
 
+## Author
+
+* **Luís Pinto** - [LiTO773](https://github.com/LiTO773)
+
 ## Special thanks
  - [**Twemoji**](https://twemoji.twitter.com/) for the folder icon I'm currently using to test the systray
  - [**Loading.io**](https://loading.io/css/) for the placeholder loading css
@@ -82,4 +86,4 @@ out-of-the-box.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License.
