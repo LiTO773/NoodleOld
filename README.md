@@ -75,6 +75,10 @@ Chrome in order to work. As of the writting of this README, only [~69%](https://
 of web users use Chrome, while *webview* would allow all users to use the app 
 out-of-the-box.
 
+## Author
+
+* **Luís Pinto** - [LiTO773](https://github.com/LiTO773)
+
 ## Special thanks
  - [**Twemoji**](https://twemoji.twitter.com/) for the folder icon I'm currently using to test the systray
  - [**Loading.io**](https://loading.io/css/) for the placeholder loading css
